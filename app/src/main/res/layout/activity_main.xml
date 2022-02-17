@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="deep"
+        android:textColor="@color/black"
+        android:textSize="50sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/meditationcard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/appname"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardBackgroundColor="@color/lightmarron"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/meditationtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Meditation"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="152.74dp"
+            android:layout_height="116.48dp"
+            android:layout_gravity="center|right"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/meditation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/blackbutton"
+            android:shadowColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/exploretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meditationcard"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="explore"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stresscard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/exploretxt"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardBackgroundColor="@color/lightgreeb"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/relaxandrelivetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Relax and Relive"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgrelax"
+            android:layout_width="128.53dp"
+            android:layout_height="97.09dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/relax" />
+
+        <Button
+            android:id="@+id/buttonforrelax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/blackbutton"
+            android:shadowColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bookcard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/stresscard"
+        android:layout_marginTop="-100dp"
+        android:outlineSpotShadowColor="@color/white"
+        app:cardBackgroundColor="@color/lightgray"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/buttontxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Books and-\nLiterature"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgbutton"
+            android:layout_width="128.53dp"
+            android:layout_height="97.09dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/book" />
+
+        <Button
+            android:id="@+id/buttonforbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/blackbutton"
+            android:shadowColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bookcard"
+        android:layout_marginTop="-70dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:outlineAmbientShadowColor="@color/lightgray"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
